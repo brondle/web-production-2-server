@@ -28,7 +28,7 @@ body {
 .about-me-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto; 
+  grid-template-rows: auto;
   width: 80%;
   margin: 0 auto;
 }
@@ -40,6 +40,15 @@ body {
   padding: 10px;
 }
 
+.lists {
+  text-align:center;
+}
+
+.lists ul, ol {
+  width: 50%;
+  text-align: left;
+  margin: 0 auto;
+}
 .poem-box {
   display: flex;
   width: 20%;

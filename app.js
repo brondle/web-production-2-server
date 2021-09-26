@@ -18,7 +18,7 @@ const port = process.env.PORT || 3000
 
 app.get('/', (req, res) => {
   console.log('foo')
-  res.render('home')
+  res.render('index')
 })
 
 app.use((req, res) => {
