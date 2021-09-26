@@ -3,6 +3,9 @@ const expressHandlebars = require('express-handlebars')
 
 const app = express()
 
+// allow our app to access images and other content in the public folder
+app.use(express.static(__dirname + '/public'))
+
 // tell our app to render views from the views folder
 app.engine('handlebars', expressHandlebars({
   defaultLayout: 'main'
@@ -14,7 +17,8 @@ app.set('view engine', 'handlebars')
 const port = process.env.PORT || 3000
 
 app.get('/', (req, res) => {
-  res.render('index')
+  console.log('foo')
+  res.render('home')
 })
 
 app.use((req, res) => {
