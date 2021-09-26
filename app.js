@@ -25,7 +25,7 @@ app.use((req, res) => {
 })
 
 app.use((err, req, res, next) => {
-  console.log('error: err.message');
+  console.log('error:', err.message)
   res.type('text/plain')
   res.status(500)
   res.send('500 - server error')
